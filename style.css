@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+  /* Primarios */
+  --LinearGradient: hsl(249, 99%, 64%) hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 3%, 87%);
+  --DarkGrayishViolet: hsl(279, 6%, 55%);
+  --VeryDarkViolet: hsl(278, 68%, 11%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+@media (min-width: 1440px) {
+  #container {
+    width: 1440px;
+    display: flex;
+  }
+  .containerBg {
+    background-image: url(./images/bg-main-desktop.png);
+    width: 900px;
+    height: 900px;
+  }
+}
+#container {
+  width: 375px;
+  margin: auto;
+  border: 1px solid red;
+}
+.containerBg {
+  background-image: url(./images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+}
+.containerForm {
+  padding: 90px 24px 45px;
+}
+
+@media (min-width: 1440px) {
+  .cardFront {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+  
+}
+.cardFront {
+  /* border: 1px solid white; */
+  z-index: 1;
+  position: absolute;
+  top: 126px;
+  left: 18px;
+  width: 288px;
+  height: 160px;
+  color: var(--White);
+  padding: 20px;
+  background-image: url(./images/bg-card-front.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cardBack {
+  position: absolute;
+  top: 30px;
+  left: 75px;
+  width: 288px;
+  height: 160px;
+  color: var(--White);
+  padding: 20px;
+  background-image: url(./images/bg-card-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bgIzq {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  background-image: url(./images/bg-main-desktop.png);
+}
+
+#bgDer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  background-color: white;
+}
+
+h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+} */

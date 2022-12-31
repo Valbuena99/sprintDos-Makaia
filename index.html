@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sprintDos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- MOBILE -->
+    <!-- Parte frontal de la Card -->
+  <main id="container">
+    <section class="containerBg">
+      <div class="cardFront">
+        <img class="cardFront_Logo" src="./images/card-logo.svg" alt="Logo">
+        <p class="cardFront_Number">0000 0000 0000 0000</p>
+        <div class="cardFront_Details">
+          <p class="cardFront_Details-Name">Jane Appleseed</p>
+          <p><span class="cardFront_Month">00</span>/<span class="cardFront_Year">00</span></p>
+        </div>
+      </div>
+
+      <!-- Parte trasera de la Card -->
+      <div class="cardBack">
+        <p class="cardBack_Cvc">000</p>
+      </div>
+    </section>
+
+    <section class="containerForm">
+      <form class="form" action="">
+        <label for="cardHolder">Cardholder Name</label>
+        <input class="formInput" type="text" name="cardHolder" id="cardHolder" placeholder="e.g. Jane Appleseed">
+        <div class="formError_CardHolder error"></div>
+        <label for="cardNumber">Card Number</label>
+        <input class="formInput" type="text" name="cardNumber" id="cardNumber" maxlength="19" placeholder="e.g. 1234 5678 9123 0000">
+        <div class="formError_Number error"></div>
+        <div class="formDate_Cvc">
+          <label for="cardMonth">Exp. Date (MM/YY)</label>
+          <label for="cardCvc">CVC</label>
+          <div>
+            <input name="cardMonth" id="cardMonth" class="formInput" type="text" maxlength="2" placeholder="MM">
+            <input name="cardYear" id="cardYear" class="formInput" type="text" maxlength="2" placeholder="YY">
+          </div>
+          <input name="cardCvc" id="cardCvc" type="text" maxlength="3" placeholder="e.g. 123">
+          <div class="formErrors">
+            <div class="formError_Mm error"></div>
+            <div class="formError_Yy error"></div>
+          </div>
+          <div class="formError_Cvc error"></div>
+        </div>
+        <input class="formSubmit" type="submit" value="Confirm">
+      </form>
+    </section>
+  </main>
+<section class="thanks">
+  <img class="thanksImg" src="./images/icon-complete.svg" alt="Complete">
+  <h1 class="thanksTitle">Thank you!</h1>
+  <p class="thanksText">We've added your card details</p>
+  <button class="thanksButton">Continue</button>
+</section>
+
+
+  <!-- <section id="bgIzq">
+    <div class="cardInfo"> 
+    </div>
+    <picture id="cardSpanFront">
+      <img src="/images/card-logo.svg" alt="Logo">
+      <img src="/images/bg-card-front.png" alt="Card">
+    </picture>
+    <div id="spanFront">
+      <span class="spanNumCard"></span>
+      <span class="spanNamCard"></span>
+      <span class="spanExpCard"></span>
+    </div>
+    <picture id="cardSpanBack">
+      <img src="/images/bg-card-back.png" alt="Card">
+    </picture>
+    <div id="spanBack">
+      <span class="spanCodCard"></span>
+    </div>
+  </section>
+
+  
+
+  <div class="cardCvc"></div>
+
+  <div id="bgDer">
+    <h5>CARDHOLDER NAME</h5>
+    <input type="text" name="cardName" id="cardName" placeholder="e.g. Jane Appleseed">
+    <h5>CARD NUMBER</h5>
+    <input type="text" name="cardNum" id="cardNum" placeholder="e.g. 1234 5678 9123 00000">
+    <h5>EXP. DATE (MM/YY)</h5>
+    <input type="text" placeholder="MM">
+    <input type="text" placeholder="YY">
+    <h5>CVC</h5>
+    <input type="text" placeholder="e.g. 123">
+    <br>
+    <button id="btnConfirm">Confirm</button>
+  </div> -->
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
