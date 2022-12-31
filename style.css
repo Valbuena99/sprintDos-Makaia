@@ -36,7 +36,6 @@ body {
 #container {
   width: 375px;
   margin: auto;
-  border: 1px solid red;
 }
 .containerBg {
   background-image: url(./images/bg-main-mobile.png);
